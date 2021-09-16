@@ -2,27 +2,9 @@ import React from 'react';
 import { Button, StyleSheet, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/HomeScreen';
+import VideoScreen from './screens/VideoScreen';
 //https://reactnavigation.org/docs/params  passing parameters
-
-function HomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Direct TV</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Videos')}
-      />
-    </View>
-  );
-}
-
-function VideoScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', marginTop: 5 }}>
-      <Text>Video Screen</Text>
-    </View>
-  );
-}
 
 const Stack = createNativeStackNavigator();
 
