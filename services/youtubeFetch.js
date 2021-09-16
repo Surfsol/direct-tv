@@ -13,7 +13,7 @@ const getVideos = async () => {
     let json = await response.json();
     return json;
   } catch (err) {
-    console.log(err);
+    return 'error'
   }
 };
 
